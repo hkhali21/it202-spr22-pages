@@ -4,31 +4,186 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>replit</title>
-
+    <link rel="manifest" href="/manifest.webmanifest">
   </head>
   <body>
     <h1>IT202 - Spring 2022 - Pages</h1>
 
     <div id="pageLinks"></div>
-
-
     <script>
-      let assignments = [
-        "googleMapsAndStaticData.html",
-        "googleMapsAndLiveData.html"
-      ]
 
-      let linksDiv = document.querySelector("#pageLinks");
-
-      assignments.forEach ( (item) => {
-        let a = document.createElement("a");
-        a.href=item;
-        a.innerText = item;
+       if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');};
+       // let arr = ["CSS BASIC",
+       //            "Bootstrap RWD Basics",
+       //            "Employee Search",
+       //            "Basic-Fetch-With-Bootstrap",
+       //            "Basic-Fetch-With-Bootstrap-Cards", 
+       //            "Map Basic",
+       //            "Google Map and Static Data",
+       //            "Google Map and Live Data",
+       //            "App-Shell Basic",
+       //            "Google Chart Basics",
+       //            "NASA Apod",]
+      // let assignments = [
+      //   "https://cssbasics.hkhali21.repl.co/",
+      //   "https://it202-basic-fetch-9.hkhali21.repl.co/",
+      //   "https://employee-search.hkhali21.repl.co/",
+      //   "https://it202-basic-fetch-with-bootstrap-cards-3.hkhali21.repl.co/",
+      //   "https://mapbasic.hkhali21.repl.co/",
+      //   "https://googlemapsandlivedata-1.hkhali21.repl.co/",
+      //   "https://googleMapstatic.hkhali21.repl.co",
+      //    "https://app-shell-basics.hkhali21.repl.co/",
+      //   "https://googlechartsbasics.hkhali21.repl.co/",
+      //   "https://nasaapod.hkhali21.repl.co/"
+      //   "https://github.com/hkhali21/IT202Project1-.git"
+       
         
-        linksDiv.append(a);
-        linksDiv.append(document.createElement("hr"));
+      // ]
+      
+     
+      // let linksDiv = document.querySelector("#pageLinks");
 
-      });
+      // assignments.forEach ( (item) => {
+      //   let a = document.createElement("a");
+      //   a.href=item;
+      //   a.innerText = item;
+        
+      //   linksDiv.append(a);
+      //   linksDiv.append(document.createElement("hr"));
+
+      // });
+      var a1 = document.createElement('a'); 
+      var link = document.createTextNode("CSS BASIC");
+      a1.appendChild(link); 
+      a1.title = "This is Link"; 
+      a1.href = "https://cssbasics.hkhali21.repl.co/"; 
+      document.body.appendChild(a1); 
+      
+      document.write("<br>");
+      var a2 = document.createElement('a'); 
+      var link = document.createTextNode("Bootstrap RWD Basics");
+      a2.appendChild(link); 
+      a2.title = "This is Link"; 
+      a2.href = "https://it202-basic-fetch-9.hkhali21.repl.co/"; 
+      document.body.appendChild(a2); 
+
+      document.write("<br>");
+      var a3 = document.createElement('a'); 
+      var link = document.createTextNode("Employee Search");
+      a3.appendChild(link); 
+      a3.title = "This is Link"; 
+      a3.href = "https://employee-search.hkhali21.repl.co/"; 
+      document.body.appendChild(a3); 
+
+      document.write("<br>");
+      var a4 = document.createElement('a'); 
+      var link = document.createTextNode("Basic-Fetch-With-Bootstrap");
+      a4.appendChild(link); 
+      a4.title = "This is Link"; 
+      a4.href = "https://it202-basic-fetch-with-bootstrap-cards-3.hkhali21.repl.co/"; 
+      document.body.appendChild(a4); 
+
+      document.write("<br>");
+      var a5 = document.createElement('a'); 
+      var link = document.createTextNode("Basic-Fetch-With-Bootstrap-Cards");
+      a5.appendChild(link); 
+      a5.title = "This is Link"; 
+      a5.href = "https://it202-basic-fetch-with-bootstrap-cards-3.hkhali21.repl.co/"; 
+      document.body.appendChild(a5); 
+
+      document.write("<br>");
+      var a6 = document.createElement('a'); 
+      var link = document.createTextNode("Map Basic");
+      a6.appendChild(link); 
+      a6.title = "This is Link"; 
+      a6.href = "https://mapbasic.hkhali21.repl.co/"; 
+      document.body.appendChild(a6); 
+
+      document.write("<br>");
+      var a7 = document.createElement('a'); 
+      var link = document.createTextNode("Google Map and Static Data");
+      a7.appendChild(link); 
+      a7.title = "This is Link"; 
+      a7.href = "https://googleMapstatic.hkhali21.repl.co";
+      document.body.appendChild(a7); 
+
+      document.write("<br>");
+      var a8 = document.createElement('a'); 
+      var link = document.createTextNode("Google Map and Live Data");
+      a8.appendChild(link); 
+      a8.title = "This is Link"; 
+      a8.href ="https://googlemapsandlivedata-1.hkhali21.repl.co/";
+      document.body.appendChild(a8); 
+
+
+      document.write("<br>");
+      var a9 = document.createElement('a'); 
+      var link = document.createTextNode("App-Shell Basic");
+      a9.appendChild(link); 
+      a9.title = "This is Link"; 
+      a9.href = "https://app-shell-basics.hkhali21.repl.co/"; 
+      document.body.appendChild(a9); 
+
+      document.write("<br>");
+      var a10 = document.createElement('a'); 
+      var link = document.createTextNode("Google Chart Basics");
+      a10.appendChild(link); 
+      a10.title = "This is Link"; 
+      a10.href = "https://googlechartsbasics.hkhali21.repl.co/"; 
+      document.body.appendChild(a10); 
+
+      document.write("<br>");
+      var a11 = document.createElement('a'); 
+      var link = document.createTextNode("NASA Apod");
+      a11.appendChild(link); 
+      a11.title = "This is Link"; 
+      a11.href = "https://nasaapod.hkhali21.repl.co/"; 
+      document.body.appendChild(a11); 
+
+      document.write("<br>");
+      var a12 = document.createElement('a'); 
+      var link = document.createTextNode("Project 1");
+      a12.appendChild(link); 
+      a12.title = "This is Link"; 
+      a12.href = "https://github.com/hkhali21/IT202Project1-.git"; 
+      document.body.appendChild(a12); 
+
+
+      document.write("<br>");
+      var a13 = document.createElement('a'); 
+      var link = document.createTextNode("html_form_basics");
+      a13.appendChild(link); 
+      a13.title = "This is Link"; 
+      a13.href = "https://htmlformbasics.hkhali21.repl.co/"; 
+      document.body.appendChild(a13); 
+
+
+      document.write("<br>");
+      var a14 = document.createElement('a'); 
+      var link = document.createTextNode("material-quickstart");
+      a14.appendChild(link); 
+      a14.title = "This is Link"; 
+      a14.href = "https://material-quickstart.hkhali21.repl.co"; 
+      document.body.appendChild(a14); 
+
+      document.write("<br>");
+      var a15 = document.createElement('a'); 
+      var link = document.createTextNode("Scrolling Game");
+      a15.appendChild(link); 
+      a15.title = "This is Link"; 
+      a15.href = "https://it202-spr22-project2-hkhali21.uicit202-hayes-spring2022.repl.co"; 
+      document.body.appendChild(a15); 
+
+      document.write("<br>");
+      var a16 = document.createElement('a'); 
+      var link = document.createTextNode("indexedDB_basics");
+      a16.appendChild(link); 
+      a16.title = "This is Link"; 
+      a16.href = "https://indexedDBbasics-1.hkhali21.repl.co"; 
+      document.body.appendChild(a16); 
+      
+
 
 
     </script>

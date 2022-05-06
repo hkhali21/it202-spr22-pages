@@ -1,0 +1,14 @@
+{
+  "name": "PWA Minimus",
+  "short_name": "PWA mini",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color":"#ffffff",
+  "icons": [
+    {
+      "src": "https://www.kindpng.com/picc/m/195-1954371_png-file-512-x-512-px-transparent-png.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }]
+}
